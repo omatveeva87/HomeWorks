@@ -7,10 +7,10 @@ public class EquationCalculation {
         float thirdResult = calculateThird(x, y, z, n);
         double fourthResult  = calculateFourth(x, y, z, n);
 
-        showResult(firstResult);
-        showResult(secondResult);
-        showResult(thirdResult);
-        showResult(fourthResult);
+        System.out.println(firstResult);
+        System.out.println(secondResult);
+        System.out.println(thirdResult);
+        System.out.println(fourthResult);
     }
 
     public static long calculateFirst(int x, int y, int z, int n) {
@@ -32,20 +32,5 @@ public class EquationCalculation {
         double result = (x / -y) + (z / (n + 15));
         return result;
     }
-
-    public static void showResult(long Result){
-        System.out.println(Result);
-
-    }
-    public static void showResult( int Result){
-        System.out.println(Result);
-
-    }
-    public static void showResult( float Result) {
-        System.out.println(Result);
-    }
-    public static void showResult( double Result) {
-        System.out.println(Result);
-    }
-}
+  }
 
